@@ -206,5 +206,5 @@ For detailed information about the testing strategy, coverage, and tools used, p
 
 
 
-➡️ \*\*\[TEST\_PLAN.md](./TEST\_PLAN.md)\*\*
+➡️ TEST_PLAN.md
 
