@@ -4,7 +4,7 @@ Date: 28.07.2025
 
 Author: Enes Furkan Aysel
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
 
 1\. Document Overview
 
@@ -12,11 +12,13 @@ This document outlines the test strategy, scope, tools, and execution procedures
 
 The application consists of a React frontend and a Node.js backend API. This plan covers both functional User Interface (UI) tests and backend API tests.
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
 
 2\. Test Strategy and Scope
 
 This section defines what will be tested and what is considered out of scope for this testing phase.
+
+
 
 2.1. In-Scope Items
 
@@ -34,6 +36,8 @@ o	Data Assertion: Asserting that the UI correctly reflects the data state after 
 
 
 
+
+
 •	API Tests (Node.js Backend):
 
 o	POST /login: Positive and negative tests for the user authentication endpoint.
@@ -45,6 +49,7 @@ o	POST /items: Test for the endpoint that creates a new todo item.
 o	PUT /items/:id: Tests for the endpoint that updates a specific todo item.
 
 o	DELETE /items/:id: Tests for the endpoint that deletes a specific todo item.
+
 
 
 
@@ -60,7 +65,7 @@ The following test types are not covered in this plan:
 
 •	Comprehensive Cross-Browser and Cross-Platform Compatibility Testing.
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
 
 
 
@@ -76,7 +81,6 @@ Functional UI Automation	Cypress	Chosen for its simple setup, fast and reliable 
 
 API Test Automation	Postman 	Postman provides a user-friendly interface for creating, organizing, and manually verifying API requests. Test collections can be easily exported and run.
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 
 
