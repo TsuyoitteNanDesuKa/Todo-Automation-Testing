@@ -1,0 +1,49 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "start:cov": "cross-env NODE_ENV=test nyc --silent node server.js",
+    "test:ui": "cypress run",
+    "test:api": "newman run 'Todo App API.postman_collection.json' -e 'todo API tests.postman_environment.json'",
+    "report:coverage": "nyc report --reporter=lcov --reporter=text",
+    "test:coverage": "npm run start:cov & npm run test:ui && npm run test:api && taskkill /F /IM node.exe && npm run report:coverage"
+  },
+  "nyc": {
+    "all": true,
+    "include": [
+      "server.js",
+      "routes/**/*.js"
+    ],
+    "exclude": [
+      "**/*.spec.js",
+      ".nyc_output",
+      "coverage"
+    ]
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.24.7",
+    "@babel/core": "^7.24.7",
+    "@babel/preset-env": "^7.24.7",
+    "@cypress/code-coverage": "^3.14.5",
+    "babel-plugin-istanbul": "^6.1.1",
+    "chai": "^5.1.1",
+    "cross-env": "^10.0.0",
+    "cypress": "^14.5.3",
+    "mocha": "^10.4.0",
+    "nyc": "^17.1.0",
+    "supertest": "^7.0.0"
+  }
+}
