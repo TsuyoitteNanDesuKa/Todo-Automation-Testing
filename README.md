@@ -188,7 +188,7 @@ From the project root directory, run:
 
 ```bash
 
-newman run "api-tests/Todo\_List\_API\_Tests.postman\_collection.json" -e "api-tests/Todo\_List\_API.postman\_environment.json"
+newman run "api-tests\Todo App API.postman_collection.json" -e "api-tests\todo API tests.postman_environment.json"
 
 ```
 
